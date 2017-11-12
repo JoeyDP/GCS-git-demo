@@ -8,4 +8,9 @@ def fib(n):
 		return fib(n-1) + fib(n-2)
 
 
-print(fib(int(sys.argv[1])))
+if __name__ == "__main__":
+	if len(sys.argv) <= 1:
+		print("Supply number")
+		exit()
+
+	print(fib(int(sys.argv[1])))
